@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Weather App</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: #1a64d6;
+        font-size: 34px;
+        line-height: 48px;
+        margin: 0;
+        font-family: Helvetica;
+      }
+      h2 {
+        text-align: center;
+        margin: 0;
+        font-size: 34px;
+        line-height: 48px;
+        font-weight: 400;
+        font-family: helvetica;
+      }
+      h3 {
+        text-align: center;
+        display: block;
+        font-size: 1.17em;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+        font-family: helvetica;
+      }
+      h4 {
+        text-align: center;
+        display: block;
+        font-size: 1.17em;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+        font-family: helvetica;
+      }
+      h5 {
+        text-align: center;
+        display: block;
+        font-size: 1.17em;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+        font-family: helvetica;
+      }
+      p {
+        font-size: 18px;
+        opacity: 0.7;
+        text-align: center;
+        font-family: monospace;
+      }
+      div {
+        text-align: center;
+        padding: 5px 10px;
+        margin: auto;
+      }
+      ul {
+        text-align: center;
+        list-style: none;
+        padding: 0;
+      }
+      button {
+        color: #ffff;
+        display: block;
+        margin: 0 auto 30px;
+        padding: 10px 20px;
+        font-size: 12px;
+        background: #185bc6;
+        border: 1px solid #185bc6;
+        border-radius: 30px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background: red;
+        color: white;
+        cursor: pointer;
+        transition: all 200ms ease-in-out;
+      }
+      li {
+        border: 1px solid #fffbf0;
+        border-radius: 10px;
+        transition: all 200ms ease-in-out;
+        margin: 18px auto;
+        padding: 10px;
+        max-width: 400px;
+      }
+      li:hover {
+        background: #fffbf0;
+      }
+      .footer {
+        font-weight: lighter;
+        color: #6d6d6d;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      🌤️ <br />
+      Currently 21° in Tokyo
+    </h1>
+    <h2>13°/ <strong>23°</strong></h2>
+    <ul>
+      <li>
+        <h3>🌧️ Tomorrow</h3>
+        <p>10°/ <strong>22°</strong></p>
+      </li>
+      <li>
+        <h4>🌥️ Saturday</h4>
+        <p>15°/ <strong>17°</strong></p>
+      </li>
+      <li>
+        <h5>☀️ Sunday</h5>
+        <p>25°/ <strong>28°</strong></p>
+      </li>
+    </ul>
+    <button>Change City</button>
+    <div class="footer">Coded by Jess Anderson</div>
+  </body>
+</html>
