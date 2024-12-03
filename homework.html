@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>City Time Zones</title>
+    <meta charset="UTF-8" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data.min.js"></script>
+  </head>
+  <body>
+    <h1>Select a City</h1>
+    <p>Choose a city to see the current date and time:</p>
+
+    <!-- Dropdown for city selection -->
+    <select id="city-select" onchange="showCityTime()">
+      <option value="">--Select a City--</option>
+      <option value="Europe/Paris">Paris, FR</option>
+      <option value="Asia/Tokyo">Tokyo, JP</option>
+      <option value="Australia/Sydney">Sydney, AU</option>
+    </select>
+
+    <script>
+      // JavaScript code to display the current time in the selected city
+      function showCityTime() {
+        const citySelect = document.getElementById("city-select");
+        const selectedCity = citySelect.value;
+
+        if (selectedCity) {
+          const currentTime = moment()
+            .tz(selectedCity)
+            .format("dddd, MMMM D, YYYY h:mm:ss A [in] z");
+          alert(`It is ${currentTime}`);
+        }
+      }
+    </script>
+  </body>
+</html>
